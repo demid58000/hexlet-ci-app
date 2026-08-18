@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: '26'
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Make setup - install dependencies
         run: make setup
 
